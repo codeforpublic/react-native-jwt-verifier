@@ -15,7 +15,8 @@ extern "C" {
  *    they describe, even if this violates rule 1.
  * 3. Within the OUT/OUTIN/IN groups, pointers to data that is typically generated
  *    later go first. This means: signatures, public nonces, private nonces,
- *    messages, public keys, secresecp256k1_context_randomizet are not data pointers go last, from more complex to less
+ *    messages, public keys, secret keys, tweaks.
+ * 4. Arguments that are not data pointers go last, from more complex to less
  *    complex: function pointers, algorithm names, messages, void pointers,
  *    counts, flags, booleans.
  * 5. Opaque data pointers follow the function pointer they are to be passed to.

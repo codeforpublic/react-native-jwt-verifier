@@ -72,4 +72,11 @@ public class Base64Utils {
         return buffer;
     }
 
+    public static String encodeBase64URLSafeString(byte[] bytes) {
+        String result = Base64Utils.encode(bytes);
+        result = result.replace('/', '_');
+        result = result.replace('+', '-');
+        result = result.replace("=", "");
+        return result;
+    }
 }

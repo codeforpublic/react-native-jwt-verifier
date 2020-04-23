@@ -16,7 +16,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -32,6 +32,7 @@ repositories {
 
 dependencies {
     implementation 'com.facebook.react:react-native:+'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.10.3'
     implementation 'com.auth0:java-jwt:3.10.2'
     implementation 'com.madgag.spongycastle:prov:1.58.0.0'
 }

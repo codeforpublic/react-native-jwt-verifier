@@ -13,7 +13,7 @@
     "@react-native-community/cli": "^4.7.0",
     "react": "16.11.0",
     "react-native": "0.62.2",
-    "react-native-jwt-verifier": "file:../react-native-jwt-verifier"
+    "react-native-jwt-verifier": "^1.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
